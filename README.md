@@ -15,14 +15,16 @@ Read the [blog post](#).
   (venv) $ pip install -r requirements.txt
   ```
 
-3. Migrate the database & start the development server:
+3. Copy *.env.example* paste it as *.env* and change it accordingly.
+
+4. Migrate the database & start the development server:
 
   ```sh
   (venv) $ python manage.py migrate
   (venv) $ python manage.py runserver
   ```
 
-4. Start a Redis instance via Docker (alternatively use a locally installed one):
+5. Start a Redis instance via Docker (alternatively use a locally installed one):
 
   ```sh
   (venv) $ docker run -d --name redis -p 6379:6379 redis
@@ -34,4 +36,4 @@ Read the [blog post](#).
   (venv) $ celery -A core worker --loglevel=INFO --concurrency=1
   ```
 
-6. Navigate to [http://localhost:8000/](http://localhost:8000/) and kick off a few tasks.
+7. Navigate to [http://localhost:8000/](http://localhost:8000/) and kick off a few tasks.
