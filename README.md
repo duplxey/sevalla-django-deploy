@@ -2,7 +2,7 @@
 
 Learn how to deploy a production-ready Django app to Sevalla.
 
-Read the [blog post](#).
+Read the [blog post](https://sevalla.com/blog/deploy-django-app-to-sevalla/).
 
 ## How to use?
 
